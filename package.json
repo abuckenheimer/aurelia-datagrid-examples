@@ -1,0 +1,57 @@
+{
+  "jspm": {
+    "dependencies": {
+      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.4",
+      "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.1.1",
+      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4",
+      "aurelia-tools": "npm:aurelia-tools@^0.1.20",
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "donnelljenkins/aurelia-datagrid": "github:donnelljenkins/aurelia-datagrid@^0.1.6",
+      "donnelljenkins/aurelia-pagination": "github:donnelljenkins/aurelia-pagination@master",
+      "font-awesome": "npm:font-awesome@^4.5.0",
+      "lodash": "npm:lodash@^4.6.1",
+      "polymer/mutationobservers": "github:polymer/mutationobservers@^0.4.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "name": "aurelia-datagrid-examples",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "jspm": "^0.16.30",
+    "npm": "^3.8.0"
+  },
+  "devDependencies": {
+    "aurelia-tools": "^0.1.16",
+    "babel-eslint": "^4.1.5",
+    "conventional-changelog": "^0.5.1",
+    "del": "^2.1.0",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-bump": "^1.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^1.1.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-yuidoc": "^0.1.2",
+    "jspm": "^0.16.15",
+    "object.assign": "^4.0.3",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "through2": "^2.0.0",
+    "vinyl-paths": "^2.1.0",
+    "yargs": "^3.30.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

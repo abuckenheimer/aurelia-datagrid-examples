@@ -1,0 +1,34 @@
+<template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class="active">Remote</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>
+      Aurelia-Datagrid
+      <small>Remote Data</small>
+    </h1>
+  </div>
+
+  
+
+  <grid css-framework="bootstrap" data-source.bind="remoteSamples" row-selected.bind="rowSelected">
+    <template replace-part="grid-template">
+      <grid-column property="name" filterable.bind="groupKtIsoFilter" sortable></grid-column>
+      <grid-column property="title" alignment="center" filterable sortable></grid-column>
+      <grid-column property="options.location" filterable sortable></grid-column>
+      <grid-column-checkbox property="active" filterable sortable></grid-column-checkbox>
+      <grid-column-button heading="Action" caption="Select" button-click.call="select(row.id)"></grid-column-button>
+    </template>
+
+    <template replace-part="grid-footer-template">
+      <td colspan.bind="columns.length">
+        <div>Total items: ${remoteSamples.length}</div>
+        <pagination></pagination>
+      </td>
+    </template>
+  </grid>
+</template>
