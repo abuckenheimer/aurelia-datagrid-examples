@@ -8,7 +8,7 @@
       "aurelia-tools": "npm:aurelia-tools@^0.1.20",
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
       "donnelljenkins/aurelia-datagrid": "github:donnelljenkins/aurelia-datagrid@^0.1.6",
-      "donnelljenkins/aurelia-pagination": "github:donnelljenkins/aurelia-pagination@master",
+      "donnelljenkins/aurelia-pagination": "github:donnelljenkins/aurelia-pagination@^0.1.1",
       "font-awesome": "npm:font-awesome@^4.5.0",
       "lodash": "npm:lodash@^4.6.1",
       "polymer/mutationobservers": "github:polymer/mutationobservers@^0.4.2"

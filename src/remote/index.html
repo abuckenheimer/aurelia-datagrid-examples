@@ -13,15 +13,24 @@
     </h1>
   </div>
 
-  
+  <div class="well">
+    
+    <p>The data is pulled from <a href="http://www.groupkt.com/">GroupKT's</a> <b>free</b> RESTful web-service to get and search countries.
+      <br>
+      <br>
+      <em>
+        Note: 
+        The <b>name</b> filter uses a custom strategy that uses <a href="http://www.groupkt.com/">GroupKT's</a> web-service search by the 2 or 3 
+        character ISO code or country name.
+      </em>
+    </p>
+  </div>
 
   <grid css-framework="bootstrap" data-source.bind="remoteSamples" row-selected.bind="rowSelected">
     <template replace-part="grid-template">
       <grid-column property="name" filterable.bind="groupKtIsoFilter" sortable></grid-column>
-      <grid-column property="title" alignment="center" filterable sortable></grid-column>
-      <grid-column property="options.location" filterable sortable></grid-column>
-      <grid-column-checkbox property="active" filterable sortable></grid-column-checkbox>
-      <grid-column-button heading="Action" caption="Select" button-click.call="select(row.id)"></grid-column-button>
+      <grid-column property="alpha2_code" filterable sortable></grid-column>
+      <grid-column property="alpha3_code" filterable sortable></grid-column>
     </template>
 
     <template replace-part="grid-footer-template">
