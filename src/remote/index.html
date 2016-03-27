@@ -1,8 +1,6 @@
 <template>
-  <require from="bootstrap/css/bootstrap.css"></require>
-
   <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
+    <li><a href="#">Live Demo</a></li>
     <li class="active">Remote</li>
   </ol>
 
@@ -26,18 +24,14 @@
     </p>
   </div>
 
-  <grid css-framework="bootstrap" data-source.bind="remoteSamples" row-selected.bind="rowSelected">
+  <grid css-framework="bootstrap" view-model.ref="remoteGridViewModel" data-source.bind="remoteSamples" row-selected.bind="rowSelected">
     <template replace-part="grid-template">
       <grid-column property="name" filterable.bind="groupKtIsoFilter" sortable></grid-column>
       <grid-column property="alpha2_code" filterable sortable></grid-column>
       <grid-column property="alpha3_code" filterable sortable></grid-column>
     </template>
-
-    <template replace-part="grid-footer-template">
-      <td colspan.bind="columns.length">
-        <div>Total items: ${remoteSamples.length}</div>
-        <pagination></pagination>
-      </td>
-    </template>
   </grid>
+  
+  <div>Total items: ${remoteSamples.length}</div>
+  <pagination model.bind="remoteGridViewModel"></pagination>
 </template>
