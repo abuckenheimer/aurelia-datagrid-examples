@@ -20,8 +20,12 @@
     }
   },
   "name": "aurelia-datagrid-examples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donnelljenkins/aurelia-datagrid-examples"
+  },
   "dependencies": {
     "jspm": "^0.16.30",
     "npm": "^3.8.0"
