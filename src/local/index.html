@@ -1,8 +1,6 @@
 <template>
-  <require from="bootstrap/css/bootstrap.css"></require>
-
   <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
+    <li><a href="#">Live Demo</a></li>
     <li class="active">Local</li>
   </ol>
 
@@ -41,11 +39,9 @@
     </template>
    
     <template replace-part="grid-footer-template">
-      <td colspan.bind="columns.length">
-        <div>Total items: ${samples.length}</div>
-        <pagination></pagination>
-      </td>
-    </template>  
+      <div>Total items: ${samples.length}</div>
+      <pagination></pagination>
+    </template>
   </grid>
   
   <button type="button" click.delegate="deleteFirst()">Delete 1st</button>
