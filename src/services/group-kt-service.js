@@ -1,3 +1,4 @@
+import 'fetch';
 import { inject } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 

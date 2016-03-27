@@ -15,6 +15,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   map: {
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.0",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
@@ -27,6 +28,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "donnelljenkins/aurelia-datagrid": "github:donnelljenkins/aurelia-datagrid@0.1.6",
     "donnelljenkins/aurelia-pagination": "github:donnelljenkins/aurelia-pagination@0.1.1",
+    "fetch": "github:github/fetch@0.11.0",
     "font-awesome": "npm:font-awesome@4.5.0",
     "lodash": "npm:lodash@4.6.1",
     "polymer/mutationobservers": "github:polymer/mutationobservers@0.4.2",
